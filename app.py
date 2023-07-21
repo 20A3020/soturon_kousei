@@ -34,7 +34,7 @@ def communicate():
 st.title("卒論の校正はお任せ！")
 st.write("ChatGPT APIを使ってあなたの卒論を校正します。")
 
-user_input = st.text_input("文章を入力", key="user_input", on_change=communicate)
+user_input = st.text_input("メッセージを入力してください。", key="user_input", on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
